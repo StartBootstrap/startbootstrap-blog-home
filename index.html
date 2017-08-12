@@ -16,46 +16,31 @@
     <!-- Custom styles for this template -->
     <link href="css/blog-home.css" rel="stylesheet">
 
-    <!-- Temporary navbar container fix -->
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
-
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="container">
-            <a class="navbar-brand" href="#">Start Bootstrap</a>
-            <div class="collapse navbar-collapse" id="navbarExample">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -71,8 +56,8 @@
 
                 <!-- Blog Post -->
                 <div class="card mb-4">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/750x300" alt="Card image cap">
-                    <div class="card-block">
+                    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                    <div class="card-body">
                         <h2 class="card-title">Post Title</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
                         <a href="#" class="btn btn-primary">Read More &rarr;</a>
@@ -84,8 +69,8 @@
 
                 <!-- Blog Post -->
                 <div class="card mb-4">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/750x300" alt="Card image cap">
-                    <div class="card-block">
+                    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                    <div class="card-body">
                         <h2 class="card-title">Post Title</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
                         <a href="#" class="btn btn-primary">Read More &rarr;</a>
@@ -97,8 +82,8 @@
 
                 <!-- Blog Post -->
                 <div class="card mb-4">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/750x300" alt="Card image cap">
-                    <div class="card-block">
+                    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                    <div class="card-body">
                         <h2 class="card-title">Post Title</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
                         <a href="#" class="btn btn-primary">Read More &rarr;</a>
@@ -122,7 +107,7 @@
                 <!-- Search Widget -->
                 <div class="card my-4">
                     <h5 class="card-header">Search</h5>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-group-btn">
@@ -135,7 +120,7 @@
                 <!-- Categories Widget -->
                 <div class="card my-4">
                     <h5 class="card-header">Categories</h5>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul class="list-unstyled mb-0">
@@ -158,7 +143,7 @@
                 <!-- Side Widget -->
                 <div class="card my-4">
                     <h5 class="card-header">Side Widget</h5>
-                    <div class="card-block">
+                    <div class="card-body">
                         You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
                     </div>
                 </div>
@@ -172,7 +157,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-inverse">
+    <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
         </div>
@@ -181,7 +166,7 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
