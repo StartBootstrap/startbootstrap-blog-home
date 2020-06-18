@@ -1,7 +1,7 @@
 {
     "title": "Blog Home",
     "name": "startbootstrap-blog-home",
-    "version": "4.2.1",
+    "version": "4.2.2",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
@@ -14,9 +14,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/blog-home",
+    "homepage": "https://startbootstrap.com/templates/blog-home",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-blog-home/issues",
+        "url": "https://github.com/StartBootstrap/startbootstrap-blog-home/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -26,15 +26,15 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-blog-home.git"
+        "url": "https://github.com/StartBootstrap/startbootstrap-blog-home.git"
     },
     "dependencies": {
-        "bootstrap": "4.3.1",
-        "jquery": "3.4.1"
+        "bootstrap": "4.5.0",
+        "jquery": "3.5.1"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
-        "del": "^4.1.1",
+        "del": "5.1.0",
         "gulp": "4.0.2",
         "merge-stream": "2.0.0"
     }
