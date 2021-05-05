@@ -39,7 +39,7 @@ html(lang='en')
         header.py-5.bg-light.border-bottom.mb-4
             .container
                 .text-center.my-5
-                    h1 Welcome to Blog Home!
+                    h1.fw-bolder Welcome to Blog Home!
                     p.lead.mb-0 A Bootstrap 5 starter layout for your next blog homepage
 
         // Page content
@@ -51,17 +51,14 @@ html(lang='en')
 
                     // Featured blog post
                     .card.mb-4
-                        img.card-img-top(src='https://dummyimage.com/750x300/dee2e6/6c757d.jpg', alt='Card image cap')
+                        a(href='#!')
+                            img.card-img-top(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg', alt='Card image cap')
                         .card-body
-                            h2.card-title.mb-4 Featured Post Title
-                            .small.text-muted.mb-4 January 1, 2021
+                            .small.text-muted January 1, 2021
+                            h2.card-title Featured Post Title
                             p.card-text
                                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
-                            a.btn.btn-primary(href='#!') Read More →
-                            .small by Start Bootstrap
-                        .card-footer.text-muted
-                            | Posted on January 1, 2021 by
-                            a(href='#!') Start Bootstrap
+                            a.btn.btn-primary(href='#!') Read more →
 
                     // Nested row for non-featured blog posts
                     .row
@@ -69,49 +66,45 @@ html(lang='en')
                         .col-lg-6
                             // Blog post
                             .card.mb-4
-                                img.card-img-top(src='https://dummyimage.com/750x300/dee2e6/6c757d.jpg', alt='Card image cap')
+                                a(href='#!')
+                                    img.card-img-top(src='https://dummyimage.com/700x350/dee2e6/6c757d.jpg', alt='...')
                                 .card-body
-                                    h2.card-title Post Title
+                                    .small.text-muted January 1, 2021
+                                    h2.card-title.h4 Post Title
                                     p.card-text
-                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.
-                                    a.btn.btn-primary(href='#!') Read More →
-                                .card-footer.text-muted
-                                    | Posted on January 1, 2021 by
-                                    a(href='#!') Start Bootstrap
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+                                    a.btn.btn-primary(href='#!') Read more →
                             // Blog post
                             .card.mb-4
-                                img.card-img-top(src='https://dummyimage.com/750x300/dee2e6/6c757d.jpg', alt='Card image cap')
+                                a(href='#!')
+                                    img.card-img-top(src='https://dummyimage.com/700x350/dee2e6/6c757d.jpg', alt='...')
                                 .card-body
-                                    h2.card-title Post Title
+                                    .small.text-muted January 1, 2021
+                                    h2.card-title.h4 Post Title
                                     p.card-text
-                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.
-                                    a.btn.btn-primary(href='#!') Read More →
-                                .card-footer.text-muted
-                                    | Posted on January 1, 2021 by
-                                    a(href='#!') Start Bootstrap
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+                                    a.btn.btn-primary(href='#!') Read more →
                         .col-lg-6
                             // Blog post
                             .card.mb-4
-                                img.card-img-top(src='https://dummyimage.com/750x300/dee2e6/6c757d.jpg', alt='Card image cap')
+                                a(href='#!')
+                                    img.card-img-top(src='https://dummyimage.com/700x350/dee2e6/6c757d.jpg', alt='...')
                                 .card-body
-                                    h2.card-title Post Title
+                                    .small.text-muted January 1, 2021
+                                    h2.card-title.h4 Post Title
                                     p.card-text
-                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.
-                                    a.btn.btn-primary(href='#!') Read More →
-                                .card-footer.text-muted
-                                    | Posted on January 1, 2021 by
-                                    a(href='#!') Start Bootstrap
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+                                    a.btn.btn-primary(href='#!') Read more →
                             // Blog post
                             .card.mb-4
-                                img.card-img-top(src='https://dummyimage.com/750x300/dee2e6/6c757d.jpg', alt='Card image cap')
+                                a(href='#!')
+                                    img.card-img-top(src='https://dummyimage.com/700x350/dee2e6/6c757d.jpg', alt='...')
                                 .card-body
-                                    h2.card-title Post Title
+                                    .small.text-muted January 1, 2021
+                                    h2.card-title.h4 Post Title
                                     p.card-text
                                         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.
-                                    a.btn.btn-primary(href='#!') Read More →
-                                .card-footer.text-muted
-                                    | Posted on January 1, 2021 by
-                                    a(href='#!') Start Bootstrap
+                                    a.btn.btn-primary(href='#!') Read more →
 
                     // Pagination
                     nav(aria-label='Pagination')
