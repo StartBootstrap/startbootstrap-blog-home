@@ -18,96 +18,130 @@ html(lang='en')
 
     body
 
-        // Navigation
+        // Responsive navbar
         nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
             .container
                 a.navbar-brand(href='#!') Start Bootstrap
-                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ml-auto
-                        li.nav-item.active
-                            a.nav-link(href='#!')
-                                | Home
-                                span.sr-only (current)
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                        li.nav-item
+                            a.nav-link(href='#') Home
                         li.nav-item
                             a.nav-link(href='#!') About
                         li.nav-item
-                            a.nav-link(href='#!') Services
-                        li.nav-item
                             a.nav-link(href='#!') Contact
+                        li.nav-item
+                            a.nav-link.active(aria-current='page', href='#') Blog
+
+        // Page header with logo and tagline
+        header.py-5.bg-light.border-bottom.mb-4
+            .container
+                .text-center.my-5
+                    h1.fw-bolder Welcome to Blog Home!
+                    p.lead.mb-0 A Bootstrap 5 starter layout for your next blog homepage
 
         // Page content
         .container
             .row
 
                 // Blog entries
-                .col-md-8
-                    h1.my-4
-                        | Page Heading
-                        small Secondary Text
+                .col-lg-8
 
-                    // Blog post
+                    // Featured blog post
                     .card.mb-4
-                        img.card-img-top(src='https://via.placeholder.com/750x300', alt='Card image cap')
+                        a(href='#!')
+                            img.card-img-top(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg', alt='...')
                         .card-body
-                            h2.card-title Post Title
+                            .small.text-muted January 1, 2021
+                            h2.card-title Featured Post Title
                             p.card-text
                                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
-                            a.btn.btn-primary(href='#!') Read More →
-                        .card-footer.text-muted
-                            | Posted on January 1, 2021 by
-                            a(href='#!') Start Bootstrap
+                            a.btn.btn-primary(href='#!') Read more →
 
-                    // Blog post
-                    .card.mb-4
-                        img.card-img-top(src='https://via.placeholder.com/750x300', alt='Card image cap')
-                        .card-body
-                            h2.card-title Post Title
-                            p.card-text
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
-                            a.btn.btn-primary(href='#!') Read More →
-                        .card-footer.text-muted
-                            | Posted on January 1, 2021 by
-                            a(href='#!') Start Bootstrap
+                    // Nested row for non-featured blog posts
+                    .row
 
-                    // Blog post
-                    .card.mb-4
-                        img.card-img-top(src='https://via.placeholder.com/750x300', alt='Card image cap')
-                        .card-body
-                            h2.card-title Post Title
-                            p.card-text
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
-                            a.btn.btn-primary(href='#!') Read More →
-                        .card-footer.text-muted
-                            | Posted on January 1, 2021 by
-                            a(href='#!') Start Bootstrap
+                        .col-lg-6
+                            // Blog post
+                            .card.mb-4
+                                a(href='#!')
+                                    img.card-img-top(src='https://dummyimage.com/700x350/dee2e6/6c757d.jpg', alt='...')
+                                .card-body
+                                    .small.text-muted January 1, 2021
+                                    h2.card-title.h4 Post Title
+                                    p.card-text
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+                                    a.btn.btn-primary(href='#!') Read more →
+                            // Blog post
+                            .card.mb-4
+                                a(href='#!')
+                                    img.card-img-top(src='https://dummyimage.com/700x350/dee2e6/6c757d.jpg', alt='...')
+                                .card-body
+                                    .small.text-muted January 1, 2021
+                                    h2.card-title.h4 Post Title
+                                    p.card-text
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+                                    a.btn.btn-primary(href='#!') Read more →
+                        .col-lg-6
+                            // Blog post
+                            .card.mb-4
+                                a(href='#!')
+                                    img.card-img-top(src='https://dummyimage.com/700x350/dee2e6/6c757d.jpg', alt='...')
+                                .card-body
+                                    .small.text-muted January 1, 2021
+                                    h2.card-title.h4 Post Title
+                                    p.card-text
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+                                    a.btn.btn-primary(href='#!') Read more →
+                            // Blog post
+                            .card.mb-4
+                                a(href='#!')
+                                    img.card-img-top(src='https://dummyimage.com/700x350/dee2e6/6c757d.jpg', alt='...')
+                                .card-body
+                                    .small.text-muted January 1, 2021
+                                    h2.card-title.h4 Post Title
+                                    p.card-text
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.
+                                    a.btn.btn-primary(href='#!') Read more →
 
                     // Pagination
-                    ul.pagination.justify-content-center.mb-4
-                        li.page-item
-                            a.page-link(href='#!') ← Older
-                        li.page-item.disabled
-                            a.page-link(href='#!') Newer →
+                    nav(aria-label='Pagination')
+                        hr.my-0
+                        ul.pagination.justify-content-center.my-4
+                            li.page-item.disabled
+                                a.page-link(href='#', tabindex='-1', aria-disabled='true') Newer
+                            li.page-item.active(aria-current='page')
+                                a.page-link(href='#!') 1
+                            li.page-item
+                                a.page-link(href='#!') 2
+                            li.page-item
+                                a.page-link(href='#!') 3
+                            li.page-item.disabled
+                                a.page-link(href='#!') ...
+                            li.page-item
+                                a.page-link(href='#!') 15
+                            li.page-item
+                                a.page-link(href='#!') Older
 
                 // Side widgets
-                .col-md-4
+                .col-lg-4
 
                     // Search widget
-                    .card.my-4
-                        h5.card-header Search
+                    .card.mb-4
+                        .card-header Search
                         .card-body
                             .input-group
-                                input.form-control(type='text', placeholder='Search for...')
-                                span.input-group-append
-                                    button.btn.btn-secondary(type='button') Go!
+                                input.form-control(type='text', placeholder='Enter search term...', aria-label='Enter search term...', aria-describedby='button-search')
+                                button#button-search.btn.btn-primary(type='button') Go!
 
                     // Categories widget
-                    .card.my-4
-                        h5.card-header Categories
+                    .card.mb-4
+                        .card-header Categories
                         .card-body
                             .row
-                                .col-lg-6
+                                .col-sm-6
                                     ul.list-unstyled.mb-0
                                         li
                                             a(href='#!') Web Design
@@ -115,7 +149,7 @@ html(lang='en')
                                             a(href='#!') HTML
                                         li
                                             a(href='#!') Freebies
-                                .col-lg-6
+                                .col-sm-6
                                     ul.list-unstyled.mb-0
                                         li
                                             a(href='#!') JavaScript
@@ -125,10 +159,10 @@ html(lang='en')
                                             a(href='#!') Tutorials
 
                     // Side widget
-                    .card.my-4
-                        h5.card-header Side Widget
+                    .card.mb-4
+                        .card-header Side Widget
                         .card-body
-                            | You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+                            | You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!
 
         // Footer
         footer.py-5.bg-dark
@@ -136,8 +170,7 @@ html(lang='en')
                 p.m-0.text-center.text-white Copyright &copy; Your Website 2021
 
         // Bootstrap core JS
-        script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
